@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header>
-          <Intro text="texto para intro1"/>
+          <Intro />
           <Intro text="texto para intro2"/>
 
         </Header>
