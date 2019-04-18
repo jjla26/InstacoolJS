@@ -7,6 +7,11 @@ export default class Intro extends React.Component{
         text: "hola soy el estado!"
     }
 
+    handleClick = () => {
+        console.log("asd")
+        this.setState({ text:"Actualizado"})
+    }
+
 
     render(){
         const { text } = this.props
@@ -14,7 +19,7 @@ export default class Intro extends React.Component{
         return(
             <div>
                 <img src={logo} className="App-logo" alt="logo" />
-                <p>
+                <p onClick={this.handleClick}>
                  {t}
                 </p>
                 <a
