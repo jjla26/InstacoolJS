@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
-import * as Header from '/components/header'
-import * as Intro from '/components/intro'
+import Header from './components/header'
+import Intro from './components/intro'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header>
-          <Intro/>
+          <Intro text="texto para intro1"/>
+          <Intro text="texto para intro2"/>
+
         </Header>
         
       </div>

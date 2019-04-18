@@ -1,14 +1,15 @@
 import * as React from 'react'
-import logo from './logo.svg';
+import logo from '../logo.svg';
 
 
 export default class Intro extends React.Component{
     render(){
+        const { text } = this.props
         return(
             <div>
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
-                    Edit <code>src/App.js</code> and save to reload.
+                 {text}
                 </p>
                 <a
                     className="App-link"
