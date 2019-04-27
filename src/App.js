@@ -5,6 +5,8 @@ import Container from './components/Container'
 import Input from './components/Input'
 import Button from './components/Button'
 import Title from './components/Title'
+import Link from './components/Link'
+
 
 class App extends Component {
   render() {
@@ -20,6 +22,7 @@ class App extends Component {
             <Button>
               Enviar
             </Button>
+            <Link> ir a Registro</Link>
           </Card>
         </Container>
       </div>
