@@ -9,21 +9,22 @@ import Center from '../../components/Center'
 
 
 
-export default class Login extends React.Component{
+export default class Signup extends React.Component{
     render(){
         return(
             <Container>
                 <Card>
                 <Title>
-                    Iniciar Sesión
+                    Registrate
                 </Title>
                 <Input placeholder="Correo" title="Correo" />
                 <Input placeholder="Contrasena" title="Contraseña" />
+                <Input placeholder="Repite Contraseña" title="Repite Contraseña" />
                 <Button block={true}>
                     Enviar
                 </Button>
                 <Center>
-                    <Link to="/registro">Ir a Registro</Link>
+                    <Link to="/">Iniciar Session</Link>
                 </Center>
                 </Card>
             </Container>
