@@ -6,7 +6,7 @@ import Input from './components/Input'
 import Button from './components/Button'
 import Title from './components/Title'
 import Link from './components/Link'
-
+import Center from './components/Center'
 
 class App extends Component {
   render() {
@@ -19,10 +19,12 @@ class App extends Component {
             </Title>
             <Input placeholder="Correo" title="Correo" />
             <Input placeholder="Contrasena" title="Contraseña" />
-            <Button>
+            <Button block={true}>
               Enviar
             </Button>
-            <Link> ir a Registro</Link>
+            <Center>
+              <Link> ir a Registro</Link>
+            </Center>
           </Card>
         </Container>
       </div>

@@ -6,7 +6,7 @@ fontSize: '14px',
 padding: '10px'
 }
 
-export default class Card extends React.Component{
+export default class Link extends React.Component{
     render(){
         const { children } = this.props
 
