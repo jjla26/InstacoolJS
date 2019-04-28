@@ -12,7 +12,7 @@ import Center from '../../components/Center'
 export default class Login extends React.Component{
     render(){
         return(
-            <Container>
+            <Container center={true}>
                 <Card>
                 <Title>
                     Iniciar Sesión
