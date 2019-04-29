@@ -7,7 +7,8 @@ const style = (center) => ({
     padding: '10px 10px',
     display: 'flex',
     alignItems: center ? 'center' : undefined,
-    justifyContent: center ? 'center' : undefined
+    justifyContent: center ? 'center' : undefined,
+    flexDirection: 'column'
 
 })
 

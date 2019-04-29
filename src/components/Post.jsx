@@ -1,18 +1,27 @@
 import React from 'react'
+import Footer from '../components/Footer.jsx'
+
 
 const style = {
-    backgroundColor: '#FFF',
-    padding:'10px 10px',
-    border:'1px solid #eee',
+    body:{
+        backgroundColor: '#FFF',
+        padding:'10px 10px',
+        border:'1px solid #eee',
+        marginBottom: '10px'
+
+    }
+
+    
 }
 
-export default class Card extends React.Component{
+export default class Post extends React.Component{
     render(){
-        const { children } = this.props
+        const { image } = this.props
 
         return(
-            <div style={style}>
-                {children}
+            <div style={style.body}>
+                <img src={image} />
+                <Footer />
             </div>
         )
     }
