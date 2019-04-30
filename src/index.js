@@ -9,10 +9,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import * as reducers from './ducks'
 import thunk from 'redux-thunk'
+import services from './services'
 
 const store = createStore(combineReducers({
     ...reducers,
-}), applyMiddleware(thunk)) 
+}), applyMiddleware(thunk.withExtraArgument(services))) 
 
 const history = createHistory()
 ReactDOM.render(
