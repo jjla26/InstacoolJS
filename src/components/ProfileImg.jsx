@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../components/Footer.jsx'
 
 
 const style = {
@@ -15,7 +14,7 @@ export default class Post extends React.Component{
         const { image } = this.props
         return(
             <div>
-                <img style={style.img} src={image} />
+                <img style={style.img} alt="" src={image} />
             </div>
         )
     }

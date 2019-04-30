@@ -28,12 +28,12 @@ export default class Profile extends React.Component{
             <div style={style.container}>
                 <div style={style.topRow}>
                     <ProfileImg image={"http://placekitten.com/g/100/100"} />
-                    <Button>Nuevo Post</Button>
+                    <Button block="false">Nuevo Post</Button>
                 </div>
                 <div style={style.row}>
-                    <Card><img src="http://placekitten.com/g/100/100" /></Card>
-                    <Card><img src="http://placekitten.com/g/100/100" /></Card>
-                    <Card><img src="http://placekitten.com/g/100/100" /></Card>
+                    <Card><img alt="" src="http://placekitten.com/g/100/100" /></Card>
+                    <Card><img alt="" src="http://placekitten.com/g/100/100" /></Card>
+                    <Card><img alt="" src="http://placekitten.com/g/100/100" /></Card>
 
                 </div>
 

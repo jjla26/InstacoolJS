@@ -1,6 +1,6 @@
 import React from 'react'
 
-const style = (block = false) => ({
+const style = (block) => ({
     border: '0px',
     borderRadius: '5px',
     color: '#fff',
@@ -13,7 +13,7 @@ const style = (block = false) => ({
 
 export default class Button extends React.Component{
     render(){
-        const { children, block } = this.props
+        const { children, block = false} = this.props
         return(
             <button {...this.props} style={style(block)}>
                 {children}

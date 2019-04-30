@@ -20,7 +20,7 @@ export default class Post extends React.Component{
 
         return(
             <div style={style.body}>
-                <img src={image} />
+                <img src={image} alt="" />
                 <Footer />
             </div>
         )

@@ -20,7 +20,7 @@ export default class Signup extends React.Component{
                 <Input placeholder="Correo" title="Correo" />
                 <Input placeholder="Contrasena" title="Contraseña" />
                 <Input placeholder="Repite Contraseña" title="Repite Contraseña" />
-                <Button block={true}>
+                <Button block="true">
                     Enviar
                 </Button>
                 <Center>

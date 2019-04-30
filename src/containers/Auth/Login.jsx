@@ -19,7 +19,7 @@ export default class Login extends React.Component{
                 </Title>
                 <Input placeholder="Correo" title="Correo" />
                 <Input placeholder="Contrasena" title="Contraseña" />
-                <Button block={true}>
+                <Button block="true">
                     Enviar
                 </Button>
                 <Center>
