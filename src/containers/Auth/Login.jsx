@@ -4,18 +4,18 @@ import Container from '../../components/Container'
 import Title from '../../components/Title'
 import LoginForm from '../../components/LoginForm'
 import { connect } from 'react-redux'
-import { login } from '../../ducks/Users'
+import { login as loginThunk } from '../../ducks/Users'
 
 class Login extends React.Component{
     render(){
-
+        const { login } = this.props
         return(
             <Container center={true}>
                 <Card>
                 <Title>
                     Iniciar Sesión
                 </Title>
-                <LoginForm />
+                <LoginForm onSubmit={login} />
                 </Card>
             </Container>
         )
@@ -25,7 +25,7 @@ class Login extends React.Component{
 const mapStateToProps = state => state
 
 const mapDispatchToProps = dispatch => ({
-    login: payload => dispatch(login(payload))
+    login: payload => dispatch(loginThunk(payload))
 })
 
 export default connect (mapStateToProps, mapDispatchToProps)(Login)

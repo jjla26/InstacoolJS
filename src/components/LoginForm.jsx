@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom'
 import Center from './Center'
 import Input from './Input'
 import Button from './Button'
-import { reduxForm } from 'redux-form'
+import { reduxForm, Field } from 'redux-form'
 
 class LoginForm extends React.Component{
     render(){
         const { handleSubmit } = this.props
         return(
             <form onSubmit={handleSubmit}>
-                <Input placeholder="Correo" title="Correo" />
-                <Input placeholder="Contrasena" title="Contraseña" />
+                <Field  name="email" placeholder="Correo" label="Correo" type="email" component={input}/>
+                <Field  name="password" placeholder="Passowrd" label="Contraseña" type="password" component={input}/>
                 <Button block="true">
                     Enviar
                 </Button>
