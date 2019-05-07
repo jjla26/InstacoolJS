@@ -10,8 +10,8 @@ class LoginForm extends React.Component{
         const { handleSubmit } = this.props
         return(
             <form onSubmit={handleSubmit}>
-                <Field  name="email" placeholder="Correo" label="Correo" type="email" component={input}/>
-                <Field  name="password" placeholder="Passowrd" label="Contraseña" type="password" component={input}/>
+                <Field  name="email" placeholder="Correo" label="Correo" type="email" component={Input}/>
+                <Field  name="password" placeholder="Passowrd" label="Contraseña" type="password" component={Input}/>
                 <Button block="true">
                     Enviar
                 </Button>

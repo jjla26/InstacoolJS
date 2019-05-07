@@ -14,15 +14,15 @@ const labelStyle = {
     fontWeight: 900
 }
 
-export default class Input extends React.Component{
-    render(){
-        const { title } = this.props
-        return(
-            <div>
-                <label style={labelStyle}>{title}</label>
-                <input style={style} {...this.props}/>
+const Input = props => {
+    const { label } = props
+    return(
+        <div>
+            <label style={labelStyle}>{label}</label>
+            <input style={style} {...props}/>
 
-            </div>
-        )
-    }
+        </div>
+    )
 }
+
+export default Input
