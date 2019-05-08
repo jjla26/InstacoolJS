@@ -15,12 +15,11 @@ const labelStyle = {
 }
 
 const Input = props => {
-    const { label } = props
+    const { label, input } = props
     return(
         <div>
             <label style={labelStyle}>{label}</label>
-            <input style={style} {...props}/>
-
+            <input {...input} {...props} style={style} />
         </div>
     )
 }
