@@ -5,10 +5,20 @@ import Signup from './containers/Auth/Signup'
 import Navbar from './components/Navbar'
 import Newsfeed from './containers/Newsfeed'
 import Profile from './containers/Profile'
-
 import { Route } from 'react-router'
+import services from './services'
 
 class App extends Component {
+
+  componentDidMount(){
+    const { auth } = services
+    auth.onAuthStateChanged(user => {
+      console.log(user)
+
+      }
+    )
+  }
+
   render() {
     return (
       <div>
