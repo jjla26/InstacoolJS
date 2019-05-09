@@ -27,6 +27,7 @@ class App extends Component {
         if(/\app\/./.test(window.location.pathname) ){
           const { history } = this.props
           history.push('/')
+
         }
 
       }
