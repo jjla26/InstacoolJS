@@ -17,7 +17,19 @@ class App extends Component {
   componentDidMount(){
     const { auth } = services
     auth.onAuthStateChanged(user => {
-      console.log(user)
+      if (user){
+        if(['/','/register'].indexOf(window.location.pathname > -1)){
+          const { history } = this.props
+          history.push('/app/newsfeed')
+        }
+        
+      }else{
+        if(/\app\/./.test(window.location.pathname) ){
+          const { history } = this.props
+          history.push('/')
+        }
+
+      }
       this.setState({loading: false})
 
       }
