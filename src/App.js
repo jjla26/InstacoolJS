@@ -10,17 +10,24 @@ import services from './services'
 
 class App extends Component {
 
+  state = {
+    loading: true
+  }
+
   componentDidMount(){
     const { auth } = services
     auth.onAuthStateChanged(user => {
       console.log(user)
+      this.setState({loading: false})
 
       }
     )
   }
 
   render() {
+    const { loading } = this.state
     return (
+      loading ? 'loading' :
       <div>
         <Route exact={true} path='/' component={Login}/>
         <Route exact={true} path='/registro' component={Signup}/>
